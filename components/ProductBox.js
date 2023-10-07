@@ -129,10 +129,10 @@ export default function ProductBox({
       <ProductInfoBox>
         <Title href={url}>{title}</Title>
         <PriceRow>
-          <Price>₹{price}</Price>
-          <FlyingButton _id={_id} src={images?.[0]}>
+          <Price>${price}</Price>
+          <Button block onClick={() => addProduct(_id)} primary outline>
             Add to cart
-          </FlyingButton>
+          </Button>
         </PriceRow>
       </ProductInfoBox>
     </ProductWrapper>
